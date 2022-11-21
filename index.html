@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Responsive Sticky Navbar</title>
+        <!-- Bootstrap Stuff -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+        <!-- Other -->
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/script.js"></script>
+   </head>
+   <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark nav fixed-top">
+                <div class="container">
+                    <a class="navbar-brand" href="#">San Francisco</a> <button aria-controls="navbarSupportedContent" aria-expanded="false"
+                     aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarSupportedContent"
+                     data-bs-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav navlinks ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Activities</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="one" id="one">
+                <div class="carousel slide" data-bs-ride="carousel" id="carouselExampleIndicators">
+                    <div class="carousel-indicators">
+                        <button aria-label="Slide 1" class="active" data-bs-slide-to="0" data-bs-target="#carouselExampleIndicators" type="button"></button>
+                        <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carouselExampleIndicators" type="button"></button> 
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img alt="..." class="d-block w-100" src="https://pix4free.org/assets/library/2021-01-12/originals/san_francisco_california_golden_gate_bridge_bay.jpg">
+                            <div class="carousel-caption">
+                                <h5 class="" style="animation-delay: 1s">Discover San Francisco</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img alt="..." class="d-block w-100" src="https://blog-www.pods.com/wp-content/uploads/2021/03/resized_FI_Getty_San-Francisco-CA-1.jpg">
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleIndicators" type="button">
+                        <span aria-hidden="true" class="carousel-control-prev-icon"></span> <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleIndicators" type="button">
+                        <span aria-hidden="true" class="carousel-control-next-icon"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+
+        </main>
+   </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js">
+    </script>
+</html>
