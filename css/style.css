@@ -214,6 +214,15 @@ footer a {
     background-color: black;
 }
 
+#twoactivities {
+    padding-top: 60px;
+    display: flex;
+    height: 120vh;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+}
+
 p.big-p {
     font-size: 12px;
 }
@@ -227,7 +236,7 @@ p.big-p {
 }
 
 h1.big-heading {
-    font-size: 5.25rem;
+    font-size: 4.25rem;
     font-weight: 900;
     color: white;
 }
