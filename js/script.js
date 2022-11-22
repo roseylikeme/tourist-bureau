@@ -1,12 +1,5 @@
 
 window.onload = function (){
-    // On Click Show Toggle Menu
-    $('.navTrigger').click(function () {
-        $(this).toggleClass('active');
-        console.log("Clicked menu");
-        $("#mainListDiv").toggleClass("show_list");
-        $("#mainListDiv").fadeIn();
-    });
 
     // Function used to shrink nav bar removing paddings and adding black background
     $(window).scroll(function() {
