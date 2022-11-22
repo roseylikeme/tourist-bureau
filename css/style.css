@@ -240,3 +240,27 @@ h1.big-heading {
     font-weight: 900;
     color: white;
 }
+
+.form-select {
+    width: 550px;
+    text-align: center;
+    margin: auto;
+}
+
+.card {
+    background-color: rgba(65, 38, 37, 0.334);
+    padding: 25px;
+  }
+
+  /* Learn How to Style the Card Later */
+  /* .cardHeading {
+    color: antiquewhite;
+    margin: 25px;
+  
+  }
+  
+  .card-text {
+    color: aliceblue;
+    text-align: center;
+  }
+   */
