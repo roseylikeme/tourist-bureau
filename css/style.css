@@ -72,6 +72,10 @@ section {
     
 }
 
+.h-100.p-5.bg-light.border.rounded-3.opacity-75 {
+    margin-top: 0;
+}
+
 /* Media query section */
 
 @media screen and (max-width:768px) {
@@ -114,12 +118,20 @@ section {
     .nav div.media_button {
         display: block;
     }
+
+    .h-100.p-5.bg-light.border.rounded-3.opacity-75 {
+        margin-top: 30px;
+    }
 }
 
 @media all and (max-width:700px){
 	.myP {
 		padding:2%;
 	}
+
+    .h-100.p-5.bg-light.border.rounded-3.opacity-75 {
+        margin-top: 30px;
+    }
 }
 
 * {
@@ -199,3 +211,6 @@ footer a {
     background-color: black; /*Replace extra bg color to black instead of white*/
 }
 /* Second section */
+p.big-p {
+    font-size: 12px;
+}
