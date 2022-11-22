@@ -16,11 +16,6 @@ section {
 	height: 100vh;
 }
 
-#two {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 /* Navbar Stuff */
 .affix {
@@ -211,6 +206,28 @@ footer a {
     background-color: black; /*Replace extra bg color to black instead of white*/
 }
 /* Second section */
+#two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
 p.big-p {
     font-size: 12px;
+}
+
+/* Form for Activities Page */
+.form-select-lg {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    font-size: 1.75rem;
+}
+
+h1.big-heading {
+    font-size: 5.25rem;
+    font-weight: 900;
+    color: white;
 }
