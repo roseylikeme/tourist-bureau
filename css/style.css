@@ -8,20 +8,18 @@ body {
     font-size: 62.5%;
     font-size: 10px;
 }
+
+
+
 /* Section Stuff */
 section {
-	height: 90vh;
-	scroll-snap-align: center;
-}
-
-.section-2 {
-    margin-top: 10vh;
-}
-
-.scroll-container {
 	height: 100vh;
-	overflow-y: scroll;
-	scroll-snap-type: y mandatory;
+}
+
+#two {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Navbar Stuff */
@@ -163,7 +161,7 @@ section {
 		background: rgba(0, 0, 0, 0.5);
 	}
 	.carousel-caption {
-		bottom: 375px;
+		/* bottom: 500px; */
 	}
 	.carousel-caption h5 {
 		font-size: 17px;
@@ -173,3 +171,31 @@ section {
 		font-size: 15px;
 	}
 }
+
+/* Footer */
+footer {
+    margin: auto;
+    padding-top: 20;
+    background-color: white;
+}
+footer a {
+    padding: 20px;
+    color: white;
+}
+
+.color-black {
+    padding-top: 10px;
+    color:#000000;
+    font-weight: 500;
+    font-size: medium;
+}
+
+.bg-2{
+    background: url("https://media.cntraveler.com/photos/5a99b5c520dfb6552425ecc8/2:1/w_2560%2Cc_limit/san-francisco_GettyImages-600366840.jpg");
+    background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    background-attachment: fixed; /*Makes sure background stays in place*/
+    background-color: black; /*Replace extra bg color to black instead of white*/
+}
+/* Second section */
