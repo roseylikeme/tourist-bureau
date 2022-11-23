@@ -8,8 +8,11 @@
         <!-- Bootstrap Stuff -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
 	    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" async></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" async integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <!-- Other -->
         <link rel="stylesheet" href="css/style.css">
+        <script src="js/script.js" async></script>
    </head>
    <body>
         <!-- Navbar Stuff -->
@@ -37,19 +40,14 @@
         <!-- Main Content -->
         <main id="main">
             <section class="bg-2" id="two">
-
                     <div id="selects">
-                            
                             <select id="categorySelect" class="form-select form-select-lg opacity-75 mb-3"></select>
-
                             <select id="adventureSelect" class="form-select form-select-lg opacity-75 mb-3"></select>
                     </div>
-
                     <!-- Place to hold information of adventure/activity -->
-                    <h4><div id="activityDescription" class="card"><p id="adventureDetailParagraph"></p></div></h4>
-                        
-                    </div>
+                    <div id="activityDescription" class="card"><p id="adventureDetailParagraph"></p></div>
             </section>
+
             <form id="checkoutForm">
                 <div class="col-md pb-3">
                     <div class="h-100 p-md-5 text-bg-dark rounded-3">
@@ -58,38 +56,32 @@
                         <div class="container1-fluid text-center">
                             <!-- Start of Form -->
                             <label>Number of tickets :</label>
-                            <input type="number" id="tickets" name="numberOfTickets" value="1" min="1" max="30" /><br>
+                            <input type="number" id="tickets" name="numberOfTickets" value="1" min="1" max="30"><br>
                             <br>
     
                             <label>Credit Card Number :</label>
-                            <input type="text" id="Credit" name="credit" value="" /><br>
+                            <input type="text" id="Credit" name="credit" value=""><br>
                             <br>
     
                             <label> Email: </label>
-                            <input class="email m-2" type="text" id="email" name="email" value="" /><br>
+                            <input class="email m-2" type="text" id="email" name="email" value=""><br>
                             <br>
     
-                            <label for="">Date:</label>
-                            <input class="pickUp m-2" type="date" id="date" name="pickUpDate" value="" />
-                            <br />
+                            <label>Date:</label>
+                            <input class="pickUp m-2" type="date" id="date" name="pickUpDate" value="">
+                            <br>
 
                             <!-- Buttons -->
-                            <input class="purchaseBtn mt-3" type="button" id="purchaseBtn" name="purchase" value="Purchase Ticket" />
+                            <input class="purchaseBtn mt-3" type="button" id="purchaseBtn" name="purchase" value="Purchase Ticket">
     
                             <input id="resetBtn" type="button" value="Reset">
                             <hr>
                             <!-- Checkout Paragraph Print -->
                             <p id="checkoutResultParagraph"></p>
-    
-    
                         </div>
                     </div>
                 </div>
             </form>
         </main>
    </body>
-   <!-- I heard page initializes faster when js stuff are on the bottom so... -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="js/script.js"></script>
 </html>
