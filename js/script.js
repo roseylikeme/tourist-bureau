@@ -126,6 +126,16 @@ function adventureSelectOnChange() {
           return;
   }
 
+  // Change BG According to ID
+
+  if (selectedAdventureValue) {
+      // Edits the background
+      document.getElementById("two").className = selectedAdventureValue;
+  }
+
+  console.log(selectedAdventureValue)
+
+
   let selectedAdventure = getActivityById(activities, selectedAdventureValue);
 
     adventureDetailParagraph.innerHTML = "<span style='color: Grey ; '>You selected : </span>" + selectedAdventure.name + "<br />" + "<span style='color: Grey ; '>ID : </span>" + selectedAdventure.id + "<br />" + "<span style='color: Grey ; '>Description : </span>" + selectedAdventure.description + "<br />" + "<span style='color: Grey ; '>Location : </span>" + selectedAdventure.location + "<br />" + "<span style='color: Grey ; '>Price : </span>" + " $ " + selectedAdventure.price;
