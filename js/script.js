@@ -1,5 +1,6 @@
 let categories = ["Adventures", "Arts & Crafts", "Museums", "Wine Tastings", "Other"];
 
+// TODO: If Remsey Asks to Complete, Finish Adding Activitiies
 let activities = [
     {
       category: "Adventures",
