@@ -1,3 +1,5 @@
+"use strict";
+
 let categories = ["Adventures", "Arts & Crafts", "Museums", "Wine Tastings", "Other"];
 
 // TODO: If Remsey Asks to Complete, Finish Adding Activitiies
@@ -20,15 +22,15 @@ let activities = [
     },
   ];
 
-window.onload = function (){
-    // Function used to shrink nav bar removing paddings and adding black background
-    $(window).scroll(function() {
-      if ($(document).scrollTop() > 50) {
-          $('.nav').addClass('affix');
-      } else {
-          $('.nav').removeClass('affix');
-      }
-    });
+window.onload = function () {
+  // Function used to shrink nav bar removing paddings and adding black background
+  $(window).scroll(function() {
+    if ($(document).scrollTop() > 50) {
+        $('.nav').addClass('affix');
+    } else {
+        $('.nav').removeClass('affix');
+    }
+  });
 
   document.getElementById("checkoutForm").style.display = "none";
   document.getElementById("adventureSelect").style.display = "none";
