@@ -137,10 +137,6 @@ section {
 	height: 100vh;
 	min-height: 300px;
 }
-.carousel-caption {
-    /* Makes caption go higher */
-	/* bottom: 220px; */
-}
 .carousel-caption h5 {
 	font-size: 45px;
 	text-transform: uppercase;

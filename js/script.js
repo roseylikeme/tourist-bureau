@@ -20,36 +20,33 @@ let activities = [
     },
   ];
 
-if (typeof window !== "undefined"){
-  window.onload = function (){
+window.onload = function (){
     // Function used to shrink nav bar removing paddings and adding black background
     $(window).scroll(function() {
-        if ($(document).scrollTop() > 50) {
-            $('.nav').addClass('affix');
-        } else {
-            $('.nav').removeClass('affix');
-        }
-  });
-    
-    document.getElementById("checkoutForm").style.display = "none";
-    document.getElementById("adventureSelect").style.display = "none";
-    document.getElementById("activityDescription").style.display = "none";
-  
-    let categorySelect = document.getElementById("categorySelect");
-    categorySelect.onchange = categorySelectOnchange;
-  
-    let adventureSelect = document.getElementById("adventureSelect");
-    adventureSelect.onchange = adventureSelectOnChange;
-  
-    let purchaseBtn = document.getElementById("purchaseBtn");
-    purchaseBtn.onclick = purchaseBtnOnClick;
-  
-    let resetBtn = document.getElementById("resetBtn");
-    resetBtn.onclick = resetBtnOnClick;
-  
-    populateCategorySelect();
-  
-  }
+      if ($(document).scrollTop() > 50) {
+          $('.nav').addClass('affix');
+      } else {
+          $('.nav').removeClass('affix');
+      }
+    });
+
+  document.getElementById("checkoutForm").style.display = "none";
+  document.getElementById("adventureSelect").style.display = "none";
+  document.getElementById("activityDescription").style.display = "none";
+
+  let categorySelect = document.getElementById("categorySelect");
+  categorySelect.onchange = categorySelectOnchange;
+
+  let adventureSelect = document.getElementById("adventureSelect");
+  adventureSelect.onchange = adventureSelectOnChange;
+
+  let purchaseBtn = document.getElementById("purchaseBtn");
+  purchaseBtn.onclick = purchaseBtnOnClick;
+
+  let resetBtn = document.getElementById("resetBtn");
+  resetBtn.onclick = resetBtnOnClick;
+
+  populateCategorySelect();
 }
 
 function populateCategorySelect(){
